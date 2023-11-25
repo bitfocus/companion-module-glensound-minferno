@@ -1,0 +1,25 @@
+{
+	"id": "glensound-minferno",
+	"name": "glensound-minferno",
+	"shortname": "gsminferno",
+	"description": "glensound-minferno",
+	"version": "0.1.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-glensound-minferno.git",
+	"bugs": "https://github.com/bitfocus/companion-module-glensound-minferno/issues",
+	"maintainers": [
+		{
+			"name": "Tea Kauppinen"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.1.0",
+		"entrypoint": "../main.js"
+	},
+	"manufacturer": "Glensound",
+	"products": ["Minferno"],
+	"keywords": ["Glensound", "Minferno"]
+}
