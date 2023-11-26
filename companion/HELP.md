@@ -1,13 +1,24 @@
-## Generic WebSocket
+## Glensound Minferno
+
+Websocket-based module that replicates the functionality of the Minferno Web UI.
 
 ### Configuration
 
-- Type in the IP address and port of the device.
+- Type in the IP address or hostname of the device.
 
 ### Available Actions
 
-- Send Command
+- Toggle PGM "On Air"
+- Gain Up
+- Gain Down
+- Gain Line Up
 
 ### Available Feedbacks
 
-- Update Variable
+- PGM Status
+
+### Available Variables
+
+- PGM Status
+- Gain
+- Meter Peak
