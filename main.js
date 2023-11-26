@@ -17,7 +17,6 @@ class GlensoundMinfernoInstance extends InstanceBase {
 	meterPeak = 0
 	
 	wsRegex = '^wss?:\\/\\/([\\da-z\\.-]+)(:\\d{1,5})?(?:\\/(.*))?$'
-	ipRegex = '^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\.?\\b){4}$'
 
 	async init(config) {
 		this.config = config
@@ -80,7 +79,7 @@ class GlensoundMinfernoInstance extends InstanceBase {
 			this.reconnect_timer = null
 		}
 
-		const url = 'ws://'+this.config.ipaddr+'/ppmetc'
+		const url = 'ws://'+this.config.addr+'/ppmetc'
 		if (!url || url.match(new RegExp(this.wsRegex)) === null) {
 			this.updateStatus(InstanceStatus.BadConfig, `IP address is not defined or invalid`)
 			return
@@ -141,15 +140,14 @@ class GlensoundMinfernoInstance extends InstanceBase {
 				width: 12,
 				label: 'Information',
 				value:
-					"Quick 'event-coded' module to control Glensound Minferno's PGM channel.",
+					"Module for controlling Glensound Minferno commentator boxes.",
 			},
 			{
 				type: 'textinput',
-				id: 'ipaddr',
-				label: 'Target IP',
-				tooltip: 'The IP address of the Glensound Minferno)',
-				width: 12,
-				regex: '/' + this.ipRegex + '/',
+				id: 'addr',
+				label: 'Target address',
+				tooltip: 'The ip address or hostname of the Glensound Minferno.',
+				width: 12
 			},
 			{
 				type: 'checkbox',
