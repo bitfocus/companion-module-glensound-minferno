@@ -3,7 +3,7 @@
 	"name": "glensound-minferno",
 	"shortname": "gsminferno",
 	"description": "glensound-minferno",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-glensound-minferno.git",
 	"bugs": "https://github.com/bitfocus/companion-module-glensound-minferno/issues",
