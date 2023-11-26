@@ -21,4 +21,5 @@ Websocket-based module that replicates the functionality of the Minferno Web UI.
 
 - PGM Status
 - Gain
-- Meter Peak
+- Meter Peak (Scaled to match the device LEDs)
+- Meter Peak RAW (Raw data reported by Minferno)
