@@ -81,7 +81,7 @@ class GlensoundMinfernoInstance extends InstanceBase {
 
 		const url = 'ws://'+this.config.addr+'/ppmetc'
 		if (!url || url.match(new RegExp(this.wsRegex)) === null) {
-			this.updateStatus(InstanceStatus.BadConfig, `IP address is not defined or invalid`)
+			this.updateStatus(InstanceStatus.BadConfig, `Address is not defined or invalid`)
 			return
 		}
 
@@ -147,7 +147,7 @@ class GlensoundMinfernoInstance extends InstanceBase {
 				id: 'addr',
 				label: 'Target address',
 				tooltip: 'The ip address or hostname of the Glensound Minferno.',
-				width: 12
+				width: 12,
 			},
 			{
 				type: 'checkbox',
@@ -156,13 +156,6 @@ class GlensoundMinfernoInstance extends InstanceBase {
 				tooltip: 'Reconnect on WebSocket error (after 5 secs)',
 				width: 6,
 				default: true,
-			},
-			{
-				type: 'checkbox',
-				id: 'debug_messages',
-				label: 'Debug messages',
-				tooltip: 'Log incomming and outcomming messages',
-				width: 6,
 			},
 			{
 				type: 'checkbox',
