@@ -3,7 +3,7 @@
 	"name": "glensound-minferno",
 	"shortname": "gsminferno",
 	"description": "glensound-minferno",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-glensound-minferno.git",
 	"bugs": "https://github.com/bitfocus/companion-module-glensound-minferno/issues",
@@ -20,6 +20,6 @@
 		"entrypoint": "../main.js"
 	},
 	"manufacturer": "Glensound",
-	"products": ["Minferno"],
-	"keywords": ["Glensound", "Minferno"]
+	"products": [ "Minferno" ],
+	"keywords": [ "Glensound", "Minferno" ]
 }
