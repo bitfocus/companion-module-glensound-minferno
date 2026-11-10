@@ -3,7 +3,7 @@
 	"name": "glensound-minferno",
 	"shortname": "gsminferno",
 	"description": "glensound-minferno",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-glensound-minferno.git",
 	"bugs": "https://github.com/bitfocus/companion-module-glensound-minferno/issues",
@@ -14,7 +14,7 @@
 	],
 	"legacyIds": [],
 	"runtime": {
-		"type": "node18",
+		"type": "node26",
 		"api": "nodejs-ipc",
 		"apiVersion": "0.0.0",
 		"entrypoint": "../main.js"
